@@ -1,0 +1,18 @@
+body {
+  background-color: #db3838;
+}
+
+.box-test-sass {
+  width: 400px;
+  height: 400px;
+  background: #617cd3;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=style.css.map */

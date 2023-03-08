@@ -1,0 +1,10 @@
+body {
+    background-color: #db3838;
+}
+.box-test-sass {
+    width: 400px;
+    height: 400px;
+    background: #617cd3;
+    border-radius: 5px;
+    @include absolute-el(50%,0,0,50%,-50%, -50%)
+}
