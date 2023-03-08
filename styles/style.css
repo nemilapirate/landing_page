@@ -1,4 +1,4 @@
-nav ul {
+.navbar .content-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,39 +18,39 @@ nav ul {
   justify-content: space-between;
 }
 
-.logo {
-  font-size: 35px;
-  padding-left: 20px;
-  position: relative;
+.img-logo {
+  height: 120px;
+  padding: 25px;
+  margin-top: 50px;
 }
 
-nav ul {
+.navbar .content-list {
   list-style-type: none;
 }
 
-nav li {
+.navbar .list {
   margin: 0 20px;
 }
 
-nav a {
+.navbar .link-list {
   text-decoration: none;
   color: #000;
   font-size: 25px;
 }
 
-nav a::after {
+.navbar .link-list::after {
   content: "";
   display: block;
   width: 100%;
   height: 1px;
   position: relative;
   top: 10px;
-  background-color: #1c1a92;
+  background-color: #22527a;
   transform: scale(0);
-  transition: trasform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
-nav a:hover::after {
+.navbar .link-list:hover::after {
   transform: scale(1);
 }
 
@@ -62,7 +62,11 @@ nav a:hover::after {
   padding: 15px;
   border-radius: 10px;
   color: #fff;
-  background: linear-gradient(45deg, #1c1a92, #3297a8);
+  background: linear-gradient(45deg, #1c1a92, #5dacbd);
+}
+
+.btn-nav-resp {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
