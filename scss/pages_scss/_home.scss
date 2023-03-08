@@ -1,10 +1,56 @@
-body {
-    background-color: #db3838;
+.main {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    position: relative;
+    min-height: 100vh;
 }
-.box-test-sass {
-    width: 400px;
-    height: 400px;
-    background: #617cd3;
-    border-radius: 5px;
-    @include absolute-el(50%,0,0,50%,-50%, -50%)
+
+// Navbar
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 35px;
+    padding-left: 20px;
+    position: relative;
+}
+nav ul {
+    list-style-type: none;
+    @extend %ultimate-flex-center;
+}
+nav li {
+    margin: 0 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+nav a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: relative;
+    top: 10px;
+    background-color: #1c1a92;
+    transform: scale(0);
+    transition: trasform 0.2s ease-in-out;
+}
+nav a:hover::after {
+    transform: scale(1) ;
+}
+.link {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    background: linear-gradient(45deg, $main-blue, rgb(50,151,168))
 }
